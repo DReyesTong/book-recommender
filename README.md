@@ -13,8 +13,7 @@ A simple web-based application to get book recommendations based on user prefere
 ## Setup
 
 1. Clone the repository:
-```bash
-git clone
+git clone <br>
 
 You will need a Google Books API key to make this project functional. Once you have it:
 Open script.js.
