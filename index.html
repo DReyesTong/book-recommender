@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Recommendation</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Book Recommendations</h1>
+
+        <form id="book-form">
+            <label>
+                What book did you just finish reading?
+                <input list="book-list" id="book" placeholder="Ex. The Godfather">
+                <datalist id="book-list"></datalist>
+            </label>
+            
+            <div id="like-about" style="display: none;">
+                <p>What did you like about it?</p>
+                <button type="button" class="preference" data-preference="author">Author's writing style</button>
+                <button type="button" class="preference" data-preference="genre">Genre</button>
+                <button type="button" class="preference" data-preference="subject">Subject matter</button>
+            </div>
+            <button id="submit" type="button" style="display: none;">Submit</button>
+        </form>
+
+        <div id="results-container">
+            <div id="results"></div>
+            <button id="more" style="display: none;">Get more recommendations</button>
+            <button id="reset" style="display: none;">Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

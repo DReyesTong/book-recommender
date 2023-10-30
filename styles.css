@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width: 80%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fca311;
+    color: black;
+    cursor: pointer;
+}
+
+form button:disabled {
+    background-color: #14213d;
+    color: white;  
+}
+
+#results-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#results .book {
+    display: none;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+#results .book:last-child {
+    border-bottom: none;
+}
+
+#more, #reset {
+    display: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fca311;
+    color: black;
+    cursor: pointer;
+    width: 100%;
+}
+
+@media (max-width: 500px) {
+    .container {
+        margin: 0 10px;
+    }
+}
+
+#submit {
+    display: none;
+    margin: 20px auto;
+}
